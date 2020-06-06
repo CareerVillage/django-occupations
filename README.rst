@@ -65,11 +65,11 @@ If you're having trouble, please comment in the Github Issues for this repo or c
     :alt: PyPI
 
 .. |travis-badge| image:: https://travis-ci.org/edx/django-occupations.svg?branch=master
-    :target: https://travis-ci.org/edx/django-occupations
+    :target: https://travis-ci.org/CareerVillage/django-occupations
     :alt: Travis
 
 .. |codecov-badge| image:: https://codecov.io/github/edx/django-occupations/coverage.svg?branch=master
-    :target: https://codecov.io/github/edx/django-occupations?branch=master
+    :target: https://codecov.io/github/CareerVillage/django-occupations?branch=master
     :alt: Codecov
 
 .. |doc-badge| image:: https://readthedocs.org/projects/django-occupations/badge/?version=latest
@@ -81,5 +81,5 @@ If you're having trouble, please comment in the Github Issues for this repo or c
     :alt: Supported Python versions
 
 .. |license-badge| image:: https://img.shields.io/github/license/edx/django-occupations.svg
-    :target: https://github.com/edx/django-occupations/blob/master/LICENSE.txt
+    :target: https://github.com/CareerVillage/django-occupations/blob/master/LICENSE.txt
     :alt: License
