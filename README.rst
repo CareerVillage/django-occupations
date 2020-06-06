@@ -18,15 +18,23 @@ Roadmap
 -------------
 - Update documentation
 - Add model relationships
+- Add slug fields for URLs
 - Add test coverage
 - Add management command to pull the latest SOC data
 - Add latest SOC data to version control and add a migration to populate data from SOC data
+- Add management command to update SOC Direct Match Titles
+- Decide how to handle when SOC *removes* certain occupations? Merge into others? Orphan them? Note the date they were deprecated?
 - Clean up some lingering references to edX that no longer make sense (this repo was set up using an edX-authored cookiecutter https://github.com/edx/edx-cookiecutters/tree/master/cookiecutter-django-app )
+
+
 
 Documentation
 -------------
 
 (TODO: Set up documentation)
+
+## Data Policy
+We use SOC 6-digit codes, but omit the hypen that SOC puts between the 2nd and 3rd digit
 
 
 License
