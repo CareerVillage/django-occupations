@@ -13,6 +13,25 @@ Overview (please modify)
 
 The structure of this data is currently based primarily on the US Federal Government's Standard Occupational Classification (SOC) system, but in the future we aspire to support other structured occupation sources. The US Federal Government's Office of Management and Budget is responsible for maintaining the Standard Occupational Classification (SOC) system. For more information on SOC, please visit https://www.bls.gov/soc/ or https://www.bls.gov/soc/2018/soc_2018_manual.pdf or https://www.bls.gov/soc/2018/soc_2018_definitions.pdf and https://www.bls.gov/soc/2018/soc_structure_2018.pdf 
 
+Quick start
+-----------
+
+1. Add "django_occupations" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'django_occupations',
+    ]
+
+2. Include the django-occupations URLconf in your project urls.py like this::
+
+    path('occupations/', include('django_occupations.urls')),
+
+3. Run ``python manage.py migrate`` to create the django-occupations models.
+
+4. Start the development server and visit http://127.0.0.1:8000/admin/
+   to view or edit occupation data (you'll need the Admin app enabled).
+
 
 Roadmap
 -------------
