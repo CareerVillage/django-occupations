@@ -107,6 +107,6 @@ If you're having trouble, please comment in the Github Issues for this repo or c
     :target: https://pypi.python.org/pypi/django-occupations/
     :alt: Supported Python versions
 
-.. |license-badge| image:: https://img.shields.io/github/license/edx/django-occupations.svg
+.. |license-badge| image:: https://img.shields.io/github/license/careervillage/django-occupations.svg
     :target: https://github.com/CareerVillage/django-occupations/blob/master/LICENSE.txt
     :alt: License
