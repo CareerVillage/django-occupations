@@ -8,7 +8,7 @@ django-occupations
 django-occupations is a reusable Django App for importing, updating, and managing structured occupation data.
 
 
-Overview (please modify)
+Overview
 ------------------------
 
 The structure of this data is currently based primarily on the US Federal Government's Standard Occupational Classification (SOC) system, but in the future we aspire to support other structured occupation sources. The US Federal Government's Office of Management and Budget is responsible for maintaining the Standard Occupational Classification (SOC) system. For more information on SOC, please visit https://www.bls.gov/soc/ or https://www.bls.gov/soc/2018/soc_2018_manual.pdf or https://www.bls.gov/soc/2018/soc_2018_definitions.pdf and https://www.bls.gov/soc/2018/soc_structure_2018.pdf 
