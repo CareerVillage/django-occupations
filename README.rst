@@ -56,6 +56,15 @@ Documentation
 We use SOC 6-digit codes, but omit the hypen that SOC puts between the 2nd and 3rd digit
 
 
+For Maintainers
+-------
+
+To publish a new release:
+1. Update the version number in the application module's __init__.py file, update CHANGELOG.rst accordingly, and run ``python setup.py tag``
+2. Generate distributions using ``python setup.py sdist bdist_wheel`` (based on the instructions at https://packaging.python.org/tutorials/packaging-projects/#generating-distribution-archives)
+3. Use twine to update PyPi with ``python -m twine upload dist/*``
+
+
 License
 -------
 
