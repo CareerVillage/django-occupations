@@ -1,7 +1,8 @@
 from django.contrib import admin
-from .models import Occupation, SOCDetailedOccupation, SOCBroadOccupation, SOCMinorGroup, SOCMajorGroup, SOCIntermediateAggregationGroup, SOCHighLevelAggregationGroup, SOCDirectMatchTitles
+from .models import ONetAlternateTitle, ONetOccupation, SOCDetailedOccupation, SOCBroadOccupation, SOCMinorGroup, SOCMajorGroup, SOCIntermediateAggregationGroup, SOCHighLevelAggregationGroup, SOCDirectMatchTitles
 
-admin.site.register(Occupation)
+admin.site.register(ONetAlternateTitle)
+admin.site.register(ONetOccupation)
 admin.site.register(SOCDetailedOccupation)
 admin.site.register(SOCBroadOccupation)
 admin.site.register(SOCMinorGroup)
