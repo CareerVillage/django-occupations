@@ -57,7 +57,7 @@ We use SOC 6-digit codes, but omit the hypen that SOC puts between the 2nd and 3
 
 
 For Maintainers
--------
+---------------
 
 To publish a new release:
 1. Update the version number in the application module's __init__.py file, update CHANGELOG.rst accordingly, and run ``python setup.py tag``

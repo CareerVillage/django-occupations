@@ -69,6 +69,7 @@ setup(
     version=VERSION,
     description="""A reusable Django App for importing, updating, and managing structured occupation data.""",
     long_description=README + '\n\n' + CHANGELOG,
+    long_description_content_type='text/x-rst',
     author='CareerVillage',
     author_email='hello@careervillage.org',
     url='https://github.com/CareerVillage/django-occupations',
