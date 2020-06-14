@@ -14,12 +14,18 @@ Change Log
 Unreleased
 ~~~~~~~~~~
 
-*
+Refer to the "Roadmap" section of the README.
 
-[0.1.0] - 2020-06-06
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Added
-_____
+[0.2.0] 2020-06-13
+~~~~~~~~~~~~~~~~~~
 
-* First release on PyPI.
+* Adds ONet models for Occupations and Alternate Titles.  
+* You must migrate after upgrading.  
+
+
+[0.1.0] 2020-06-06
+~~~~~~~~~~~~~~~~~~
+
+* First release on PyPI.  
+* Defines SOC models.  
