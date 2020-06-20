@@ -201,7 +201,7 @@ class SOCHighLevelAggregationGroup(TimeStampedModel):
     .. no_pii:
     """
 
-    # TODO: add field definitions
+    name = models.CharField(max_length=256, unique=True, null=True)
 
     def __str__(self):
         """
@@ -209,18 +209,3 @@ class SOCHighLevelAggregationGroup(TimeStampedModel):
         """
         return f"<SOCHighLevelAggregationGroup, ID: {self.id}, Name: {self.name}>"
 
-
-class SOCDirectMatchTitles(TimeStampedModel):
-    """
-    TODO: This is a placeholder for DirectMatchTitles. Refer to https://www.bls.gov/soc/2018/home.htm#match 
-
-    .. no_pii:
-    """
-
-    # TODO: add field definitions
-
-    def __str__(self):
-        """
-        Get a string representation of this model instance.
-        """
-        return f"<SOCDirectMatchTitles, ID: {self.id}, Name: {self.name}>"

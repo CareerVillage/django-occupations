@@ -16,6 +16,13 @@ Unreleased
 
 Refer to the "Roadmap" section of the README.
 
+[0.2.1] 2020-06-19
+~~~~~~~~~~~~~~~~~~
+
+* Adds name field to SOCHighLevelAggregationGroup model.
+* Removes directtitlematch model.  
+* You must migrate after upgrading.  
+
 
 [0.2.0] 2020-06-13
 ~~~~~~~~~~~~~~~~~~

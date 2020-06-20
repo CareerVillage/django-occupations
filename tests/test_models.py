@@ -66,11 +66,3 @@ class TestSOCHighLevelAggregationGroup:
     def test_something(self):
         """TODO: Write real test cases."""
 
-
-class TestSOCDirectMatchTitles:
-    """
-    Tests of the SOCDirectMatchTitles model.
-    """
-
-    def test_something(self):
-        """TODO: Write real test cases."""
