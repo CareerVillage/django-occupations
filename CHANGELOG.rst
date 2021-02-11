@@ -6,7 +6,7 @@ Change Log
    in this file.  It adheres to the structure of https://keepachangelog.com/ ,
    but in reStructuredText instead of Markdown (for ease of incorporation into
    Sphinx documentation and the PyPI description).
-   
+
    This project adheres to Semantic Versioning (https://semver.org/).
 
 .. There should always be an "Unreleased" section for changes pending release.
@@ -15,6 +15,13 @@ Unreleased
 ~~~~~~~~~~
 
 Refer to the "Roadmap" section of the README.
+
+[0.2.2] 2021-02-10
+~~~~~~~~~~~~~~~~~~
+
+* Makes the ONetAlternateTitles-to-SOCOccupations relationship many-to-many. This better matches the ONET taxonomy.  
+* You must migrate after upgrading.  
+
 
 [0.2.1] 2020-06-19
 ~~~~~~~~~~~~~~~~~~

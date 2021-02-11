@@ -10,16 +10,16 @@ class ONetAlternateTitle(TimeStampedModel):
     O*Net-SOC Alternate Titles
 
     From https://www.onetcenter.org/dictionary/24.3/excel/alternate_titles.html
-        "...alternate, or 'lay', occupational titles for the O*NET-SOC 
-        classification system. The file was developed to improve keyword 
-        searches in several Department of Labor internet applications 
+        "...alternate, or 'lay', occupational titles for the O*NET-SOC
+        classification system. The file was developed to improve keyword
+        searches in several Department of Labor internet applications
         (i.e., Career InfoNet, O*NET OnLine, and O*NET Code Connector).
-        The file contains occupational titles from existing occupational 
-        classification systems, as well as from other diverse sources. When 
-        a title contains acronyms, abbreviations, or jargon, the 'Short Title' 
+        The file contains occupational titles from existing occupational
+        classification systems, as well as from other diverse sources. When
+        a title contains acronyms, abbreviations, or jargon, the 'Short Title'
         column contains the brief version of the full title."
 
-    Note: O*Net also publishes a "source" for the alternate title, but that 
+    Note: O*Net also publishes a "source" for the alternate title, but that
     is not yet being stored here.
 
     .. no_pii:
@@ -30,8 +30,7 @@ class ONetAlternateTitle(TimeStampedModel):
     title = models.CharField(max_length=150)
     onet_soc_code = models.CharField(max_length=10, null=True)
     onet_soc_occupation = models.ManyToManyField('ONetOccupation')
-    soc_occupation = models.ForeignKey('SOCDetailedOccupation', null=True,
-                                   on_delete=models.SET_NULL)
+    soc_occupations = models.ManyToManyField('SOCDetailedOccupation', related_name='onet_alternate_titles')
 
     def __str__(self):
         """
@@ -46,29 +45,29 @@ class ONetOccupation(TimeStampedModel):
     O*Net-SOC Occupations
 
     From https://www.onetcenter.org/dl_files/Taxonomy2010_Summary.pdf
-        In the O*NET-SOC taxonomy, an occupation that is directly adopted 
-        from the SOC system is assigned the six-digit SOC code, along with 
-        a .00 extension. If directly adopted from the SOC, the SOC title 
-        and definition are also used. Hereafter, these are referred to as 
+        In the O*NET-SOC taxonomy, an occupation that is directly adopted
+        from the SOC system is assigned the six-digit SOC code, along with
+        a .00 extension. If directly adopted from the SOC, the SOC title
+        and definition are also used. Hereafter, these are referred to as
         SOC-level occupations.
-        If the O*NET-SOC occupation is more detailed than the original SOC 
-        detailed occupation, it is assigned the six-digit SOC code from 
-        which it originated, along with a two-digit extension starting with 
-        .01, then .02, .03 and so on, depending on the number of detailed 
-        O*NET-SOC occupations linked to the particular SOC detailed 
+        If the O*NET-SOC occupation is more detailed than the original SOC
+        detailed occupation, it is assigned the six-digit SOC code from
+        which it originated, along with a two-digit extension starting with
+        .01, then .02, .03 and so on, depending on the number of detailed
+        O*NET-SOC occupations linked to the particular SOC detailed
         occupation.
-        For example, Nuclear Technicians is a SOC detailed occupation to 
-        which two detailed O*NET-SOC occupations are linked. See the 
+        For example, Nuclear Technicians is a SOC detailed occupation to
+        which two detailed O*NET-SOC occupations are linked. See the
         occupational codes and titles for this example below.
             19-4051.00 Nuclear Technicians (SOC-level)
-            19-4051.01 Nuclear Equipment Operation Technicians (detailed 
+            19-4051.01 Nuclear Equipment Operation Technicians (detailed
                        O*NET-SOC occupation)
-            19-4051.02 Nuclear Monitoring Technicians (detailed O*NET-SOC 
-                       occupation) 
+            19-4051.02 Nuclear Monitoring Technicians (detailed O*NET-SOC
+                       occupation)
 
     .. no_pii:
     """
-    
+
     onet_soc_code = models.CharField(max_length=10, unique=True)
     title = models.CharField(max_length=150)
     description = models.TextField(blank=True, null=True)
